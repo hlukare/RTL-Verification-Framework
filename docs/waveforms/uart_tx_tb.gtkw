@@ -1,0 +1,16 @@
+[*]
+[*] GTKWave Analyzer save file - uart_tx
+[*]
+[dumpfile] "../../build/waves/uart_tx_tb.vcd"
+[timestart] 0
+[size] 1200 700
+[pos] -1 -1
+@28
+uart_tx_tb.clk
+uart_tx_tb.rst_n
+uart_tx_tb.start
+uart_tx_tb.data_i[7:0]
+uart_tx_tb.tx
+uart_tx_tb.busy
+uart_tx_tb.done
+

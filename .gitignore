@@ -1,0 +1,16 @@
+build/
+work/
+transcript
+vsim.wlf
+*.vcd
+*.fst
+*.vvp
+coverage.dat
+coverage.info
+coverage/
+*.log
+*.jou
+*.pb
+*.tmp
+*.bak
+.DS_Store

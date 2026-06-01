@@ -1,0 +1,20 @@
+[*]
+[*] GTKWave Analyzer save file - sync_fifo
+[*]
+[dumpfile] "../../build/waves/fifo_tb.vcd"
+[timestart] 0
+[size] 1200 700
+[pos] -1 -1
+@28
+fifo_tb.clk
+fifo_tb.rst_n
+fifo_tb.wr_en
+fifo_tb.rd_en
+fifo_tb.din[7:0]
+fifo_tb.dout[7:0]
+fifo_tb.full
+fifo_tb.empty
+fifo_tb.almost_full
+fifo_tb.almost_empty
+fifo_tb.count[3:0]
+

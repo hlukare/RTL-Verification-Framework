@@ -1,0 +1,28 @@
+name: RTL Verification Framework
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repository-sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install open-source EDA tools
+        run: sudo apt-get update && sudo apt-get install -y iverilog verilator
+      - name: Check required project assets
+        run: |
+          test -f README.md
+          test -d rtl
+          test -d tb
+          test -d assertions
+          test -d docs/waveforms
+          test -d sim
+          test -d scripts
+      - name: Show repository tree
+        run: find . -maxdepth 3 -type f | sort
+      - name: Run Icarus Verilog regression
+        run: make regress
+      - name: Run Verilator lint
+        run: make verilator

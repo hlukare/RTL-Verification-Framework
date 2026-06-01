@@ -1,0 +1,16 @@
+[*]
+[*] GTKWave Analyzer save file - round_robin_arbiter
+[*]
+[dumpfile] "../../build/waves/arbiter_tb.vcd"
+[timestart] 0
+[size] 1200 700
+[pos] -1 -1
+@28
+arbiter_tb.clk
+arbiter_tb.rst_n
+arbiter_tb.req[3:0]
+arbiter_tb.ready
+arbiter_tb.grant[3:0]
+arbiter_tb.valid
+arbiter_tb.expected_pointer
+
